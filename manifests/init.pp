@@ -27,10 +27,6 @@ class logrotate_wrapper (
     path          => '/var/log/faillog',
     postrotate    => 'reload rsyslog > /dev/null 2>&1 || true',
   }
-  logrotate::rule { 'lastlog':
-    path          => '/var/log/lastlog',
-    postrotate    => 'reload rsyslog > /dev/null 2>&1 || true',
-  }
   logrotate::rule { 'bootlog':
     path          => '/var/log/boot.log',
     postrotate    => 'reload rsyslog > /dev/null 2>&1 || true',
