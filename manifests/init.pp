@@ -39,5 +39,17 @@ class logrotate_wrapper (
     path          => '/var/log/messages',
     postrotate    => 'reload rsyslog > /dev/null 2>&1 || true',
   }
+  logrotate::rule { 'maillog':
+    path          => '/var/log/maillog',
+    postrotate    => 'reload rsyslog > /dev/null 2>&1 || true',
+  }
+  logrotate::rule { 'secure':
+    path          => '/var/log/secure',
+    postrotate    => 'reload rsyslog > /dev/null 2>&1 || true',
+  }
+  logrotate::rule { 'syslog':
+    path          => '/var/log/spooler',
+    postrotate    => 'reload rsyslog > /dev/null 2>&1 || true',
+  }
 
 }
