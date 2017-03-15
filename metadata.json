@@ -1,0 +1,19 @@
+{
+      "name": "lfisher47-logrotate_wrapper",
+      "version": "0.0.3",
+      "author": "Leah Fisher",
+      "license": "Apache-2.0",
+      "summary": "Wrapper around rodjek/logrotate module.",
+      "source": "https://github.com/lfisher47/puppet-logrotate_wrapper",
+      "project_page": "https://github.com/lfisher47/puppet-logrotate_wrapper",
+      "issues_url": "https://github.com/lfisher47/puppet-logrotate_wrapper/issues",
+      "operatingsystem_support": [
+        {
+        "operatingsystem":"RedHat",
+        "operatingsystemrelease":[ "6.0", "7.0" ]
+        }
+       ],
+      "dependencies": [
+        { "name": "rodjek/logrotate" }
+      ]
+}

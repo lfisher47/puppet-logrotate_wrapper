@@ -1,8 +1,0 @@
-name 'lfisher47-logrotate_wrapper'
-version '0.0.2'
-source  'git://github.com/lfisher47/puppet-logrotate_wrapper.git'
-author  'Leah Fisher'
-license 'Apache 2.0'
-summary 'Wrapper around rodjek/logrotate module.'
-description 'Wrapper around rodjek/logrotate module.'
-dependency 'rodjek/logrotate'
